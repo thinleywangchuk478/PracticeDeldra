@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="dz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>འབྲེལ་སྒྲ་ཕྲད་ཀྱི་ལག་ལེན་སྦྱང་བ།</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="gameContainer">
+    <h1>འབྲེལ་སྒྲའི་ཕྲད་ཀྱི་ལག་ལེན་སྦྱང་བ། <br> Genitive Case Practice</h1>
+    <p class="subtitle">ལྟག་གི་སྒྲོམ་ནང་ཡོད་མི་མིང་ཚིག་ཚུ་ལུ་་ འོས་འབབ་ཡོད་པའི་འབྲེལ་སྒྲའི་ཕྲད་འཐེན་ཏེ་ སྒྲོམ་ནང་ལུ་མཐུན་སྒྲིག་འབད།/Drag the correct particle onto each noun</p>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <div class="controls">
+      <button onclick="checkAnswers()">Check Answers</button>
+      <button id="resetBtn" onclick="resetGame()">Reset Game</button>
+      <button id="nextLevelBtn" onclick="goToNextLevel()" class="next-btn" style="display: none;">
+  Next Level →
+</button>
+    </div>
+
+    <p id="feedback"></p>
+
+    <div id="hints">
+      <p id="hint1" class="hint">མཐའ་མེད་ཀྱི་མཐའ་མར་ → གི་ ཡང་ན་ འི་འཐོབ།</p>
+      <p id="hint2" class="hint">རྗེས་འཇུག་ ན་མ་ར་ལ་ ་གི་མཐའ་མར་ → གྱི་ འཐོབ།</p>
+      <p id="hint3" class="hint">རྗེས་འཇུག་ ད་བ་ས་ གི་མཐའ་མར་ → ཀྱི་ འཐོབ།</p>
+      <p id="hint4" class="hint">བླམ་ཟེརཝ་ད་ མ་ འདི་རྗེས་འཇུག་མེན། མིང་མཐའ་ཨིན། དེའི་མཐའ་མར་་ → གི་ ཡང་ན་ འི་ འཐོབ། </p>
+      <p id="hint5" class="hint">མཐའ་མེད་ཀྱི་མཐའ་མར་ → གི་ ཡང་ན་ འི་འཐོབ།</p>
+      <p id="hint6" class="hint">རྗེས་འཇུག་ ག་ང་ ་གི་མཐའ་མར་ → གི་ འཐོབ།</p>
+    </div>
+  </div>
+<!-- Background Music -->
+  <audio id="bgMusic" loop>
+    <source src="background-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
